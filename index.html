@@ -26,7 +26,7 @@
                 <p><input type="date" name="adatok" id="szuldatum"></p>
         </div>
         </div>
-        <h5>Gépjármű-és üzemanyagadatok</h5>
+        <h4>Gépjármű-és üzemanyagadatok</h4>
         <div class="row">
             <div class="col-4">
                 <p><label for="gyartmany">Gyártmány, típus:</label></p>
@@ -34,6 +34,7 @@
                 <p><label for="szuldatum">Fogyasztási norma:</label></p>
                 <p><label for="szuldatum">Utazás dátuma:</label></p>
                 <p><label for="szuldatum">Üzemanyag egységára:</label></p>
+                <p> Forrás: <a href="https://nav.gov.hu/ugyfeliranytu/uzemanyag/"> https://nav.gov.hu/ugyfeliranytu/uzemanyag/</a></p>
             </div>
             
         
@@ -45,19 +46,47 @@
                         <option value="gazolaj">Gázolaj</option>
                     </select>
                 </p>
-            
-            <p>
-                <select name=""
-
-
-
-            </p>
-
-
-
-
-
-
+                <p>
+                    <select name="autoadat" id="fogy">
+                        <option value="b1">1000 cm3-ig 7,6 l/100km</option>
+                        <option value="b2">1001-1500 cm3 között 8,6 l/100km</option>
+                        <option value="b3">1501-2000 cm3 között 9,5 l/100km</option>
+                        <option value="b4">2001-3000 cm3 között 11,4 l/100km</option>
+                        <option value="b5">3001 cm3 fölött 13,3 l/100km</option>
+                    </select>
+                </p>
+                <p><input class="mt-3" type="date" name="autoadat" id="utazasdatum"></p>
+                <p><input readonly type="text" name="autoadat" id="uzamanyagar"></p>
+            </div>
+        </div>
+        <h4>A megtett út adatai</h4>
+        <div class="row">
+            <div class="col-4">
+                <p><label for="indulas">Kiindulási hely:</label></p>
+                <p><label for="erkezes">Úticél:</label></p>
+                <p><label for="koztescel">További úticél:</label></p>
+                <p><label for="kmadat">Összes megtett távolság:</label></p>
+            </div>
+            <div class="col-8">
+                <p><input type="text" name="utadat" id="indulas"></p>
+                <p><input type="text" name="utadat" id="erkezes"></p>
+                <p><input type="date" name="utadat" id="koztescel"></p>
+                <p><input readonly type="text" name="utadat" id="kmadat"></p>
+            </div>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-4">
+                    <p><label for="osszkoltseg">Útiköltség:</label></p>
+                    <p><label for="amortizacio">Amortizáció:</label></p>
+                    <p><label for="elszamolhato">Összes elszámolható költség:</label></p>
+                </div>
+                <div class="col-8">
+                    <p><input readonly type="text" name="osszes" id="osszkoltseg"></p>
+                    <p><input readonly type="text" name="osszes" id="amortizacio"></p>
+                    <p><input readonly type="text" name="osszes" id="elszamolhato"></p>
+                </div>
+            </div>
     </div>
     
 </body>
