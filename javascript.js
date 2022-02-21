@@ -5,7 +5,8 @@ function getuzemanyagtipus()
 {
     var adat;
     adat = document.getElementById("uzemanyagtipus");
-    if (adat="benzin"){
+    if(ertek="benzin")
+    {
         
     }
 }
